@@ -10,30 +10,73 @@ import {
   StyleSheet,
   Text,
   View,
-  Image
+  Image,
+  ScrollView
 } from 'react-native';
 
-class Blink extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {showText: true};
-    // setInterval(() => {this.setState({showText: !this.state.showText})},
-    //   1000);
+import Mapbox, { MapView } from 'react-native-mapbox-gl';
+
+const accessToken = 'ACCESS_TOKEN';
+Mapbox.setAccessToken(accessToken);
+
+class MapExample extends Component {
+  state = {
+    center: {
+      latitude: -6.90389,
+      longitude: 107.61861
+    },
+    zoom: 11,
+    userTrackingMode: Mapbox.userTrackingMode.none,
+    annotations: []
+  };
+
+  componentWillMount() {
+    this._offlineProgressSubscription = Mapbox.addOfflinePackProgressListener(progress => {
+      console.log('offline pack progress', progress);
+    });
+    this._offlineMaxTilesSubscription = Mapbox.addOfflineMaxAllowedTilesListener(tiles => {
+      console.log('offline max allowed tiles', tiles);
+    });
+    this._offlineErrorSubscription = Mapbox.addOfflineErrorListener(error => {
+      console.log('offline error', error);
+    });
+  }
+
+  componentWillUnmount() {
+    this._offlineProgressSubscription.remove();
+    this._offlineMaxTilesSubscription.remove();
+    this._offlineErrorSubscription.remove();
   }
 
   render() {
-    let display = this.state.showText ? this.props.text : ' ';
     return (
-      <Text style={this.props.style}>{display}</Text>
-    );
+      <View style={styles.container}>
+        <MapView
+          ref={map => { this._map = map; }}
+          style={styles.map}
+          initialCenterCoordinate={this.state.center}
+          initialZoomLevel={this.state.zoom}
+          initialDirection={0}
+          rotateEnabled={true}
+          scrollEnabled={true}
+          zoomEnabled={true}
+          showsUserLocation={true}
+          styleURL={Mapbox.mapStyles.dark}
+          userTrackingMode={this.state.userTrackingMode}
+          annotations={this.state.annotations}
+          annotationsAreImmutable
+          />
+          <ScrollView style={styles.scrollView}>
+            {this._renderButtons()}
+          </ScrollView>
+      </View>
+    )
   }
-}
 
-class Greeting extends Component {
-  render() {
+  _renderButtons() {
     return (
-      <Text>Hello {this.props.name}!</Text>
-    );
+      <View></View>
+    )
   }
 }
 
@@ -44,20 +87,10 @@ export default class Semut extends Component {
     };
     return (
       <View style={styles.container}>
-        <Image source={pic} style={{width: 139, height: 110}}/>
-        <Greeting name="Hendy"/>
-        <Greeting name="Nurul"/>
-        <Blink style={styles.wow} text="Wow blinking!"/>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Semut
         </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
+        <MapExample></MapExample>
       </View>
     );
   }
@@ -83,6 +116,9 @@ const styles = StyleSheet.create({
   wow: {
     color: '#ff0000',
   },
+  map: {
+    flex: 1
+  }
 });
 
 AppRegistry.registerComponent('Semut', () => Semut);
