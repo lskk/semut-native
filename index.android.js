@@ -9,13 +9,28 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';
+
+class Greeting extends Component {
+  render() {
+    return (
+      <Text>Hello {this.props.name}!</Text>
+    );
+  }
+}
 
 export default class Semut extends Component {
   render() {
+    let pic = {
+      uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
+    };
     return (
       <View style={styles.container}>
+        <Image source={pic} style={{width: 139, height: 110}}/>
+        <Greeting name="Hendy"/>
+        <Greeting name="Nurul"/>
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
