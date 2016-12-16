@@ -13,6 +13,22 @@ import {
   Image
 } from 'react-native';
 
+class Blink extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {showText: true};
+    // setInterval(() => {this.setState({showText: !this.state.showText})},
+    //   1000);
+  }
+
+  render() {
+    let display = this.state.showText ? this.props.text : ' ';
+    return (
+      <Text style={this.props.style}>{display}</Text>
+    );
+  }
+}
+
 class Greeting extends Component {
   render() {
     return (
@@ -31,6 +47,7 @@ export default class Semut extends Component {
         <Image source={pic} style={{width: 139, height: 110}}/>
         <Greeting name="Hendy"/>
         <Greeting name="Nurul"/>
+        <Blink style={styles.wow} text="Wow blinking!"/>
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
@@ -62,6 +79,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
+  },
+  wow: {
+    color: '#ff0000',
   },
 });
 
