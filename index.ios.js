@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 
-export default class welldone extends Component {
+export default class Semut extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -50,4 +50,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('welldone', () => welldone);
+AppRegistry.registerComponent('Semut', () => Semut);

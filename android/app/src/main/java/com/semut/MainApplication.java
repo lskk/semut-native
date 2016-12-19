@@ -1,4 +1,4 @@
-package com.welldone;
+package com.semut;
 
 import android.app.Application;
 import android.util.Log;

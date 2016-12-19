@@ -5,13 +5,14 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
-		00E356F31AD99517003FC87E /* welldoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* welldoneTests.m */; };
+		00E356F31AD99517003FC87E /* SemutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SemutTests.m */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -23,18 +24,6 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		68979A2E85894B3CA37DFB16 /* Andale Mono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7943DBF726E414DA4806C69 /* Andale Mono.ttf */; };
-		0D4B81A67B134B98AB56E595 /* Arial Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D57D56AA9DC6491FB477A220 /* Arial Black.ttf */; };
-		1C9FD9BCEC914CB18F9255F2 /* Arial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15D8EEE3624C43549D7F16B4 /* Arial.ttf */; };
-		E9E82EA4D9794662828E52AB /* Comic Sans MS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA6715980D4C3FA1645582 /* Comic Sans MS.ttf */; };
-		87D5439CD16C4F858872825F /* Courier New.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5F70E260F26480F989E69D2 /* Courier New.ttf */; };
-		76A8E60FDAA44B8AA5D98688 /* Georgia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 526C13A56A6F4D8D97A78F23 /* Georgia.ttf */; };
-		99BD6B88785541E59A6D9457 /* Microsoft Sans Serif.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05610DBE8C2D47C6B908DFE4 /* Microsoft Sans Serif.ttf */; };
-		B326F16ABB2948FBB7BF96BB /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5BC604627F47C4830D0B40 /* Roboto_medium.ttf */; };
-		95FBA576BEFB4308AA16EB19 /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4B08A88462C482DA43777BD /* Roboto.ttf */; };
-		EB4EC783D1EC4D20A861C2DC /* SF-UI-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01662E12261841C8ABB6EF96 /* SF-UI-Text-Regular.otf */; };
-		3C97C1EF498C47629E6CA86F /* Skia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03EB5D3B74D743DD915B5D37 /* Skia.ttf */; };
-		7849BCE2480842E4919894D2 /* Times New Roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D08C301EA8154A69B21806DC /* Times New Roman.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +67,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = welldone;
+			remoteInfo = Semut;
 		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -138,34 +127,22 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* welldoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = welldoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* SemutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SemutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* welldoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = welldoneTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* SemutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SemutTests.m; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* welldone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = welldone.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = welldone/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = welldone/AppDelegate.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Semut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Semut.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Semut/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Semut/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = welldone/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = welldone/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = welldone/main.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Semut/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Semut/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Semut/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		C7943DBF726E414DA4806C69 /* Andale Mono.ttf */ = {isa = PBXFileReference; name = "Andale Mono.ttf"; path = "../node_modules/native-base/Fonts/Andale Mono.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D57D56AA9DC6491FB477A220 /* Arial Black.ttf */ = {isa = PBXFileReference; name = "Arial Black.ttf"; path = "../node_modules/native-base/Fonts/Arial Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		15D8EEE3624C43549D7F16B4 /* Arial.ttf */ = {isa = PBXFileReference; name = "Arial.ttf"; path = "../node_modules/native-base/Fonts/Arial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7BBA6715980D4C3FA1645582 /* Comic Sans MS.ttf */ = {isa = PBXFileReference; name = "Comic Sans MS.ttf"; path = "../node_modules/native-base/Fonts/Comic Sans MS.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E5F70E260F26480F989E69D2 /* Courier New.ttf */ = {isa = PBXFileReference; name = "Courier New.ttf"; path = "../node_modules/native-base/Fonts/Courier New.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		526C13A56A6F4D8D97A78F23 /* Georgia.ttf */ = {isa = PBXFileReference; name = "Georgia.ttf"; path = "../node_modules/native-base/Fonts/Georgia.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		05610DBE8C2D47C6B908DFE4 /* Microsoft Sans Serif.ttf */ = {isa = PBXFileReference; name = "Microsoft Sans Serif.ttf"; path = "../node_modules/native-base/Fonts/Microsoft Sans Serif.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		FA5BC604627F47C4830D0B40 /* Roboto_medium.ttf */ = {isa = PBXFileReference; name = "Roboto_medium.ttf"; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A4B08A88462C482DA43777BD /* Roboto.ttf */ = {isa = PBXFileReference; name = "Roboto.ttf"; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		01662E12261841C8ABB6EF96 /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; name = "SF-UI-Text-Regular.otf"; path = "../node_modules/native-base/Fonts/SF-UI-Text-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		03EB5D3B74D743DD915B5D37 /* Skia.ttf */ = {isa = PBXFileReference; name = "Skia.ttf"; path = "../node_modules/native-base/Fonts/Skia.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D08C301EA8154A69B21806DC /* Times New Roman.ttf */ = {isa = PBXFileReference; name = "Times New Roman.ttf"; path = "../node_modules/native-base/Fonts/Times New Roman.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,13 +215,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00E356EF1AD99517003FC87E /* welldoneTests */ = {
+		00E356EF1AD99517003FC87E /* SemutTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* welldoneTests.m */,
+				00E356F21AD99517003FC87E /* SemutTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = welldoneTests;
+			path = SemutTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -271,7 +248,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* welldone */ = {
+		13B07FAE1A68108700A75B9A /* Semut */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -282,7 +259,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = welldone;
+			name = Semut;
 			sourceTree = "<group>";
 		};
 		146834001AC3E56700842450 /* Products */ = {
@@ -339,11 +316,10 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* welldone */,
+				13B07FAE1A68108700A75B9A /* Semut */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* welldoneTests */,
+				00E356EF1AD99517003FC87E /* SemutTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
-				1A6F815BF489435EADD0579B /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -352,38 +328,18 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* welldone.app */,
-				00E356EE1AD99517003FC87E /* welldoneTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Semut.app */,
+				00E356EE1AD99517003FC87E /* SemutTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1A6F815BF489435EADD0579B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C7943DBF726E414DA4806C69 /* Andale Mono.ttf */,
-				D57D56AA9DC6491FB477A220 /* Arial Black.ttf */,
-				15D8EEE3624C43549D7F16B4 /* Arial.ttf */,
-				7BBA6715980D4C3FA1645582 /* Comic Sans MS.ttf */,
-				E5F70E260F26480F989E69D2 /* Courier New.ttf */,
-				526C13A56A6F4D8D97A78F23 /* Georgia.ttf */,
-				05610DBE8C2D47C6B908DFE4 /* Microsoft Sans Serif.ttf */,
-				FA5BC604627F47C4830D0B40 /* Roboto_medium.ttf */,
-				A4B08A88462C482DA43777BD /* Roboto.ttf */,
-				01662E12261841C8ABB6EF96 /* SF-UI-Text-Regular.otf */,
-				03EB5D3B74D743DD915B5D37 /* Skia.ttf */,
-				D08C301EA8154A69B21806DC /* Times New Roman.ttf */,
-			);
-			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* welldoneTests */ = {
+		00E356ED1AD99517003FC87E /* SemutTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "welldoneTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "SemutTests" */;
 			buildPhases = (
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
@@ -394,14 +350,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = welldoneTests;
-			productName = welldoneTests;
-			productReference = 00E356EE1AD99517003FC87E /* welldoneTests.xctest */;
+			name = SemutTests;
+			productName = SemutTests;
+			productReference = 00E356EE1AD99517003FC87E /* SemutTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* welldone */ = {
+		13B07F861A680F5B00A75B9A /* Semut */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "welldone" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Semut" */;
 			buildPhases = (
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -412,9 +368,9 @@
 			);
 			dependencies = (
 			);
-			name = welldone;
+			name = Semut;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* welldone.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Semut.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -423,7 +379,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 610;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -432,7 +388,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "welldone" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Semut" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -491,8 +447,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* welldone */,
-				00E356ED1AD99517003FC87E /* welldoneTests */,
+				13B07F861A680F5B00A75B9A /* Semut */,
+				00E356ED1AD99517003FC87E /* SemutTests */,
 			);
 		};
 /* End PBXProject section */
@@ -598,18 +554,6 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				68979A2E85894B3CA37DFB16 /* Andale Mono.ttf in Resources */,
-				0D4B81A67B134B98AB56E595 /* Arial Black.ttf in Resources */,
-				1C9FD9BCEC914CB18F9255F2 /* Arial.ttf in Resources */,
-				E9E82EA4D9794662828E52AB /* Comic Sans MS.ttf in Resources */,
-				87D5439CD16C4F858872825F /* Courier New.ttf in Resources */,
-				76A8E60FDAA44B8AA5D98688 /* Georgia.ttf in Resources */,
-				99BD6B88785541E59A6D9457 /* Microsoft Sans Serif.ttf in Resources */,
-				B326F16ABB2948FBB7BF96BB /* Roboto_medium.ttf in Resources */,
-				95FBA576BEFB4308AA16EB19 /* Roboto.ttf in Resources */,
-				EB4EC783D1EC4D20A861C2DC /* SF-UI-Text-Regular.otf in Resources */,
-				3C97C1EF498C47629E6CA86F /* Skia.ttf in Resources */,
-				7849BCE2480842E4919894D2 /* Times New Roman.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,7 +581,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* welldoneTests.m in Sources */,
+				00E356F31AD99517003FC87E /* SemutTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,7 +599,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* welldone */;
+			target = 13B07F861A680F5B00A75B9A /* Semut */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -667,7 +611,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = welldone;
+			path = Semut;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -681,11 +625,11 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = welldoneTests/Info.plist;
+				INFOPLIST_FILE = SemutTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/welldone.app/welldone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Semut.app/Semut";
 			};
 			name = Debug;
 		};
@@ -694,11 +638,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = welldoneTests/Info.plist;
+				INFOPLIST_FILE = SemutTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/welldone.app/welldone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Semut.app/Semut";
 			};
 			name = Release;
 		};
@@ -708,14 +652,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = welldone/Info.plist;
+				INFOPLIST_FILE = Semut/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_NAME = welldone;
+				PRODUCT_NAME = Semut;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -725,14 +669,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = welldone/Info.plist;
+				INFOPLIST_FILE = Semut/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_NAME = welldone;
+				PRODUCT_NAME = Semut;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -826,7 +770,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "welldoneTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "SemutTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -835,7 +779,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "welldone" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Semut" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -844,7 +788,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "welldone" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Semut" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
